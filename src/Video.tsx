@@ -15,6 +15,37 @@ export const RemotionVideo: React.FC = () => {
 		</>
 	);
 };
+const CloudinaryImage = () => 
+	<Img
+	src={cloudinary} alt='cloudinary'
+	style={{
+		display: 'block',
+		marginLeft: 'auto',
+		marginRight: 'auto',
+		width: '30%',
+		height: '50%',
+	}}
+	/>
+const Title = () => 
+	<h1
+	style={{
+		position: 'absolute',
+		top: '40%',
+		width: '100%',
+		textAlign: 'center',
+		fontSize: '3rem',
+	}}
+	>Welcome to Cloudinary</h1>
+const Subtitle = () =>
+ <h3
+ style={{
+	position: 'absolute',
+	top: '70%',
+	width: '100%',
+	textAlign: 'center',
+	fontSize: '3rem',
+}}
+ >Transform images and videos to load faster with no visual degradation, automatically generate image and video variants, and deliver high quality responsive experiences to increase conversions.</h3>
 
 const Main = () => {
 	const {fps, durationInFrames} = useVideoConfig();
