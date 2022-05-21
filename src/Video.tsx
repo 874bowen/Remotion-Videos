@@ -16,22 +16,30 @@ export const RemotionVideo: React.FC = () => {
 		</>
 	);
 };
-const CloudinaryImage = () => 
-	<Img
-	src={cloudinary} alt='cloudinary'
-	style={{
-		display: 'block',
-		marginLeft: 'auto',
-		marginRight: 'auto',
-		width: '30%',
-		height: '50%',
-	}}
-	/>
+const CloudinaryImage = () => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+
+	const translate = spring({frame, fps, to: 100})
+	return(
+		<Img
+		src={cloudinary} alt='cloudinary'
+		style={{
+			display: 'block',
+			marginLeft: 'auto',
+			marginRight: 'auto',
+			width: '30%',
+			height: '50%',
+			transform: `translateY(${translate}px)`
+		}}
+	/> 
+	);
+}
 const Title = () => 
 	<h1
 	style={{
 		position: 'absolute',
-		top: '40%',
+		top: '50%',
 		width: '100%',
 		textAlign: 'center',
 		fontSize: '3rem',
@@ -58,6 +66,7 @@ const Main = () => {
 	const {fps, durationInFrames} = useVideoConfig();
 	return (
 		<div style={{backgroundColor: 'white', flexGrow: 1}}>
+			<Audio src={audios} startFrom={0} endAt={90}/>
 			<Sequence from={fps*0.3} durationInFrames={durationInFrames}>
 				<CloudinaryImage />
 			</Sequence>
