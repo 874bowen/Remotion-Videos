@@ -1,5 +1,6 @@
-import {Composition, Img, Sequence, useVideoConfig} from 'remotion';
-import cloudinary from './cloudinary.png'
+import {Composition, Img, Sequence, useCurrentFrame, useVideoConfig, spring, Audio} from 'remotion';
+import cloudinary from './cloudinary.png';
+import audios from './audios.mp3';
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -36,16 +37,22 @@ const Title = () =>
 		fontSize: '3rem',
 	}}
 	>Welcome to Cloudinary</h1>
-const Subtitle = () =>
- <h3
- style={{
-	position: 'absolute',
-	top: '70%',
-	width: '100%',
-	textAlign: 'center',
-	fontSize: '3rem',
-}}
+const Subtitle = () => {
+	const frame = useCurrentFrame();
+	const opacity = frame > 30 ? 1 : frame / 30;
+	return (
+ 	<h3
+ 	style={{
+		position: 'absolute',
+		top: '60%',
+		width: '100%',
+		textAlign: 'center',
+		fontSize: '3rem',
+		opacity
+	}}
  >Transform images and videos to load faster with no visual degradation, automatically generate image and video variants, and deliver high quality responsive experiences to increase conversions.</h3>
+ );
+}
 
 const Main = () => {
 	const {fps, durationInFrames} = useVideoConfig();
