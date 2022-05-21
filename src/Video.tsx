@@ -1,8 +1,5 @@
-import {Composition} from 'remotion';
-import {HelloWorld} from './HelloWorld';
-import {Logo} from './HelloWorld/Logo';
-import {Subtitle} from './HelloWorld/Subtitle';
-import {Title} from './HelloWorld/Title';
+import {Composition, Img, Sequence, useVideoConfig} from 'remotion';
+import cloudinary from './cloudinary.png'
 
 export const RemotionVideo: React.FC = () => {
 	return (
