@@ -1,6 +1,6 @@
 import {Composition, Img, Sequence, useCurrentFrame, useVideoConfig, spring, Audio} from 'remotion';
 import cloudinary from './cloudinary.png';
-import audios from './audios.mp3';
+import voice from './voice.mp3';
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -8,7 +8,7 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="Main"
 				component={Main}
-				durationInFrames={30*3}
+				durationInFrames={30*15}
 				fps={30}
 				width={1920}
 				height={1080}
@@ -42,9 +42,16 @@ const Title = () =>
 		top: '50%',
 		width: '100%',
 		textAlign: 'center',
-		fontSize: '3rem',
+		fontSize: '5rem',
 	}}
-	>Welcome to Cloudinary</h1>
+	><span style={{color: 'burlywood'}}>Welcome </span> <span style={{color: 'darkorange'}}>to</span> <span style={{color: 'deepskyblue'}}>Cloudinary</span></h1>
+
+const AudVoice = () => {
+	return (
+		<Audio src={voice} startFrom={0} endAt={30*15}/>
+	);
+}
+
 const Subtitle = () => {
 	const frame = useCurrentFrame();
 	const opacity = frame > 30 ? 1 : frame / 30;
@@ -66,10 +73,14 @@ const Main = () => {
 	const {fps, durationInFrames} = useVideoConfig();
 	return (
 		<div style={{backgroundColor: 'white', flexGrow: 1}}>
-			<Audio src={audios} startFrom={0} endAt={90}/>
+			
 			<Sequence from={fps*0.3} durationInFrames={durationInFrames}>
 				<CloudinaryImage />
 			</Sequence>
+			<Sequence from={fps} durationInFrames={durationInFrames}>
+				<AudVoice />
+			</Sequence>
+			
 			<Sequence from={fps} durationInFrames={durationInFrames}>
 				<Title />
 			</Sequence>
