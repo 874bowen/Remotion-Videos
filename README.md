@@ -3,7 +3,7 @@ Videos enable us to establish authority and a more personal feel to your message
 
 Let’s explore how we can achieve this.
 
-[video](https://res.cloudinary.com/bowenivan/video/upload/v1653459665/video_nnfzml.mp4)
+![video](https://res.cloudinary.com/bowenivan/video/upload/v1653459665/video_nnfzml.mp4)
 ## Github
 
 Check out this [GitHub Repository](https://github.com/874bowen/Remotion-Videos.git) for the complete source code.
@@ -265,7 +265,7 @@ Once done you will find the video inside the `out` folder of your project.
 ## Uploading our Video to Cloudinary
 To upload a video to [Cloudinary](https://cloudinary.com/) you have to log in to Cloudinary first if you don't have an account you can create a free account by clicking [this link](https://cloudinary.com/users/register/free)
 
-[img](https://res.cloudinary.com/bowenivan/image/upload/v1653459150/login_h1ladj.jpg)
+![img](https://res.cloudinary.com/bowenivan/image/upload/v1653459150/login_h1ladj.jpg)
 
 ## Conclusion
 Great! In this article we managed to create a 15 second video without using any video editing tools just React. It's amazing how we can create videos using react, right? 
