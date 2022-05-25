@@ -269,4 +269,4 @@ To upload a video to [Cloudinary](https://cloudinary.com/) you have to log in to
 
 ## Conclusion
 Great! In this article we managed to create a 15 second video without using any video editing tools just React. It's amazing how we can create videos using react, right? 
-We also managed the video to Cloudinary in just few steps. Animation makes a great part of this world.
+We also managed the video to Cloudinary in just few steps.
