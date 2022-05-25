@@ -3,6 +3,7 @@ Videos enable us to establish authority and a more personal feel to your message
 
 Let’s explore how we can achieve this.
 
+[video](https://res.cloudinary.com/bowenivan/video/upload/v1653459665/video_nnfzml.mp4)
 ## Github
 
 Check out this [GitHub Repository](https://github.com/874bowen/Remotion-Videos.git) for the complete source code.
@@ -16,14 +17,14 @@ Below are some requirements you are to meet to follow along this article:
 In your preferred directory, create a new remotion project using `yarn create video` 
 
 You might want to choose the recommended template but for the purposes of this choose a _blank_ template. Run `yarn start` This will start the local dev server running. You will see a window like this.
-![img.png](img.png)
+![img.png](https://res.cloudinary.com/bowenivan/image/upload/v1653459476/img_qo190p.png)
 On the left we have a sidebar showing all the compositions for our project which allows you to isolate and inspect each scene in the video. Each composition is a renderable component. A composition is made up of sequences which tell the video which frames to display the content in. The entry point of a remotion project is the `index.tsx` here we call the function `registerRoot(RemotionVideo);` which is in the `Video.tsx`
 
 ## Introduction
 Open the `Video.tsx` file. This file contains the `RemotionVideo` component. You can think of this component as your entire video.
 ```javascript
 export const RemotionVideo: React.FC = () => {
-	return (
+    return (
         <>
             <Composition 
                 id="Empty"
@@ -262,7 +263,9 @@ To build our project run `npm run build` on your terminal. This has a dependency
 Once done you will find the video inside the `out` folder of your project.
 
 ## Uploading our Video to Cloudinary
+To upload a video to [Cloudinary](https://cloudinary.com/) you have to log in to Cloudinary first if you don't have an account you can create a free account by clicking [this link](https://cloudinary.com/users/register/free)
 
+[img](https://res.cloudinary.com/bowenivan/image/upload/v1653459150/login_h1ladj.jpg)
 
 ## Conclusion
 Great! In this article we managed to create a 15 second video without using any video editing tools just React. It's amazing how we can create videos using react, right? 
