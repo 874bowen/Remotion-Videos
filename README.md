@@ -1,5 +1,7 @@
 # Creating Videos using React.js and uploading them to Cloudinary
-Videos enable us to establish authority and a more personal feel to your message. It enables us to connect with the emotional levels of our audience. React is a great JavaScript library for describing User Interfaces that change over time. To create video content programmatically with React.js we will are going to use an amazing tool called Remotion.
+Videos enable us to establish authority and a more personal feel to your message. It enables us to connect with the emotional levels of our audience. React is a great JavaScript library for describing User Interfaces that change over time. To create video content programmatically with React.js
+
+We are going to use an amazing tool called Remotion.
 
 Let’s explore how we can achieve this.
 
