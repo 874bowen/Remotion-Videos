@@ -3,7 +3,7 @@ Videos enable us to establish authority and a more personal feel to your message
 
 Let’s explore how we can achieve this.
 
-<video controls>
+<video width="320" height="240" controls>
 <source src="https://res.cloudinary.com/bowenivan/video/upload/v1653459665/video_nnfzml.mp4" type="video/mp4">
 </video>
 
