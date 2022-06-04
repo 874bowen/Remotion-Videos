@@ -263,15 +263,6 @@ To build our project run `yarn build` or `npm run build` on your terminal. This 
 
 Once done you will find the video inside the `out` folder of your project.
 
-## Uploading our Video to Cloudinary
-To upload a video to [Cloudinary](https://cloudinary.com/) you have to log in to Cloudinary first if you don't have an account you can create a free account by clicking [this link](https://cloudinary.com/users/register/free)
-
-![img](https://res.cloudinary.com/bowenivan/image/upload/v1653459150/login_h1ladj.jpg)
-
-On top-right corner click the upload button and select the video and click open to upload it to Cloudinary.
-
-![success](https://res.cloudinary.com/bowenivan/image/upload/v1653463034/success_hochxy.jpg)
-
 Click [this link](https://res.cloudinary.com/bowenivan/video/upload/v1653462377/video_ikangr.mp4) to see the end video. 
 
 ## Conclusion
