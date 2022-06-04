@@ -267,4 +267,4 @@ Click [this link](https://res.cloudinary.com/bowenivan/video/upload/v1653462377/
 
 ## Conclusion
 Great! In this article we managed to create a 15 second video without using any video editing tools just React. It's amazing how we can create videos using react, right? 
-We also managed the video to Cloudinary in just few steps.
+
