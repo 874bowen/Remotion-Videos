@@ -259,7 +259,7 @@ const Image = () => {
 The `spring` function makes our component to bounce from a point to a point. We'll get the `fps` from the hook as shown. The function takes the `frame` and `fps` so that it knows how fast to go, `from` and `to` tells you how much range you want the outputs to be, `from` has a default value of zero.  
 
 ## Building our Project
-To build our project run `yarn build` or `npm run build` on your terminal. This has a dependency on `ffmpeg`, the terminal will give you instructions on how to configure it on your machine.
+To build our project run `yarn build` or `npm run build` if you are using `npm` on your terminal. This has a dependency on `ffmpeg`, the terminal will give you instructions on how to configure it on your machine.
 
 Once done you will find the video inside the `out` folder of your project.
 
